@@ -1,0 +1,19 @@
+name: Python CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install-and-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run pylint
+        run: |
+          pip install pylint
+          pylint **/*.py
