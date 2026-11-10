@@ -16,4 +16,4 @@ jobs:
       - name: Run pylint
         run: |
           pip install pylint
-          pylint --disable=missing-module-docstring,missing-function-docstring,trailing-newlines,consider-using-dict-items **/*.py
+          pylint **/*.py
