@@ -40,4 +40,3 @@ except FileNotFoundError:
 
 except PermissionError:
     print("Ei lukuoikeutta")
-
