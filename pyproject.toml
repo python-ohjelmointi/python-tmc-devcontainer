@@ -1,3 +1,10 @@
 [tool.uv]
 # https://docs.astral.sh/uv/reference/settings/#exclude-newer
 exclude-newer = "1 week"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "missing-module-docstring",
+    "missing-function-docstring",
+    "consider-using-dict-items",
+]
